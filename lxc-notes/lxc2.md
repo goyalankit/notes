@@ -1,4 +1,3 @@
-
 Creating and Running the container
 ==================================
 
@@ -20,4 +19,5 @@ You can also deamonize the container by using `-d` flag while starting.
 `lxc-start -n myfc -d`
 
 Now you can enter the container using `lxc-console -n myfc`
+
 To exit the container, simply use `ctrl+a q`
