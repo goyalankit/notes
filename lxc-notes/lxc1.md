@@ -6,7 +6,8 @@ Most of the [l|u]nix kernels have support for lxc by default.
 lxc-create
 ----------
 
-```lxc-create -h
+```
+lxc-create -h
 usage: lxc-create -n <name> [-f configuration] [-t template] [-h] -- [template_options]
 usage: lxc-create -n <name> [-f configuration] [-t template] [-h] [fsopts] -- [template_options]
    fsopts: -B none
@@ -33,13 +34,13 @@ for template-specific help, specify a template, for instance:
 lxc-create -t ubuntu -h
 ```
 
-Backing store (-B) option is telling LXC what filesystem to create the container with. 
+Backing store **(-B)** option is telling LXC what filesystem to create the container with. 
 Two options:
 * lvm
 * btrfs
 
-btrfs is not stable yet. So go with lvm or leave it blank. It will check
+**btrfs** is not stable yet. So go with lvm or leave it blank. It will check
 what thr filesystem of `/var/lib/lxc` is and make it the filesystem of
 container.
 
-Templates: Shell scripts that get run when lxc-create is called. Check `/usr/lib/lxc/templates` on ubuntu for examples. An ISO of the system is downloaded when used for the first time.
+**Templates:** Shell scripts that get run when lxc-create is called. Check `/usr/lib/lxc/templates` on ubuntu for examples. An ISO of the system is downloaded when used for the first time.
