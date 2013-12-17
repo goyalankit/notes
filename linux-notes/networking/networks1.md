@@ -30,6 +30,7 @@ ff02::2 ip6-allrouters
 ```
 
 * `/etc/nsswitch.conf` : List order of host name search. Typically look at local files, then NIS(Network Information Server)
+
 ```
 # /etc/nsswitch.conf
 #
@@ -59,6 +60,7 @@ HOSTNAME=vagrant-centos65.vagrantup.com
 ```
 
 * Fedora/Centos `/etc/sysconfig/network-scripts/ifcfg-*device*`
+
 ```
 cat /etc/sysconfig/network-scripts/ifcfg-eth0
 
@@ -74,6 +76,7 @@ UUID="643967a6-f225-4907-98ee-e0a961c7c167"
 ```
 
 * Ubuntu/Debian `/etc/network/interfaces`
+
 ```
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
