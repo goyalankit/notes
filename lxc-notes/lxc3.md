@@ -63,14 +63,28 @@ myfc       root      1980  0.0  0.0  12756   156 pts/1    Ss+  04:02   0:00 /sbi
 ---
 
 `lxc-netstat` like normal netstat command. To pass arguments use it in a following way.
+
 ```
 root@precise64:/home/vagrant# lxc-netstat -n myfc -ntlup
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1916/sshd
-tcp6       0      0 :::22                   :::*                    LISTEN      1916/sshd
-udp        0      0 0.0.0.0:68              0.0.0.0:*                           1894/dhclient3
+tcp        0      0 0.0.0.0:22              0.0.0.0:\*               LISTEN      1916/sshd
+tcp6       0      0 :::22                   :::\*                    LISTEN      1916/sshd
+udp        0      0 0.0.0.0:68              0.0.0.0:\*                           1894/dhclient3
 ```
-**Not the argument passing syntax is not same as **`lxc-ps`
+**Not the argument passing syntax is not same as**`lxc-ps`
+
+---
+
+`lxc-cgroup` allows you to tweak lxc's inner workings. These can also be set in containers config file.
+
+`lxc-cgroup -n myfc memory.usage_in_bytes` to know the amount of memory
+being used.
 
 
+`lxc-cgroup -n myfc memory.limit_in_bytes 300000000` allows you set
+the memory limit on a container.
+
+
+**Containers share memory whenever possible.(system libraries, etc.)
+this is the reason for low footprint.**
