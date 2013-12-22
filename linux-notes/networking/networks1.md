@@ -1,3 +1,6 @@
+Based on Tutorial at:
+http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html#VPN
+
 Linux TCP/IP configuration files
 
 * `/etc/resolv.conf` : List DNS Servers for internet domain name resolution.

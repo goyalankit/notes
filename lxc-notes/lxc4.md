@@ -26,4 +26,10 @@ To make the changes restart: `lxc-stop -n myfc` and `lxc-start -n myfc -d`
 
 Running `ifconfig` on host pc will show you the corresponding adapter(`vethmyfc` in this case).
 
+Try pinging Google.com from inside the container. If it doesn't work you
+need to add rule in Iptables.
 
+---
+
+Need to read more on this. It worked for me out of the box. However the
+tutorial says that it shouldn't.
