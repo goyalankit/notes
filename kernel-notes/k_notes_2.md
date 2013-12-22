@@ -85,21 +85,3 @@ Files that are also located in the root of the kernel folder:
 21. **virt**: Contains code for virtualization that allows users to run multiple OS at once.This is different from Xen. With virtualization, guest operating system acts as any other application. With hypervisor like Xen, the two operating systems are managing hardware together at the same time. In virtualization, guest OS runs on top of Linux kernel. However in a hypervisor there is no guest OS and all the OS don't depend on each other.
 
 Tip: Don't move files around in the kernel. Compilation will fail due to missing file.
-
-21. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
