@@ -43,6 +43,13 @@ Drivers are small programs that enable the kernel to communicate and handle hard
 
 * **crypto**: These drivers provide cryptographic features.
 
+* **dca** - Direct Cache Access drivers allow the kernel to access the CPU cache. 
+
+* **dma** - The Direct memory access (DMA) driver allows devices to access without needing the CPU. This reduces the load on the CPU.
+
+* **extcon** - The EXTernal CONnectors driver detects changes in the ports when a device is plugged in. For instance, extcon will detect if a user plugs in a USB drive. 
+
+
 Go to http://www.linux.org/threads/the-linux-kernel-drivers.4205/ for more drivers.
 
 
