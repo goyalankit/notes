@@ -22,7 +22,11 @@ mutex fun(){
 
 ```
 
-***Everything in c++ is deep copy***
+Assert: ***Everything in c++ is copy***
+
+Shallow copy is the default
+
+##### Example String in c++
 
 ```c++
 #include<iostream>
