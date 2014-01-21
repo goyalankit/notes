@@ -3,9 +3,17 @@
 
 **Destructors**: release of resources
 
-**Resource Allocation is Initialization.**
+**Resource Acquisition Is Initialization (RAII)**
 
-```
+*From wikipedia:*
+
+In this language, if an exception is thrown, and proper exception handling is in place, the only code that will be executed for the current scope are the destructors of objects declared in that scope.
+
+RAII is vital in writing exception-safe C++ code: to release resources before permitting exceptions to propagate (in order to avoid resource leaks) one can write appropriate destructors once rather than dispersing and duplicating cleanup logic between exception handling blocks that may or may not be executed.
+
+---
+
+```c++
 Semaphore sem;
 
 mutex fun(){
@@ -16,7 +24,7 @@ mutex fun(){
 
 ***Everything in c++ is deep copy***
 
-```
+```c++
 #include<iostream>
 #include<cstdint>
 
@@ -101,7 +109,7 @@ If the type doesn't have a desctructor. It doesn't generate loop to delete.
 
 ### every constructor is a type convertor.
 
-```
+```c++
 
 int main(void){
 	String s("Hello World!");
@@ -128,7 +136,7 @@ with `explicit`
 
 **c++: object is pushed on stack.**
 
-```
+```c++
 void doit(String t){
 	cout << t << endl;
 //	while(true); 
@@ -151,7 +159,7 @@ default constructor to push on stack.
 
 **while pushing to stack**
 
-```
+```c++
 
 //Shallow Copy
 
@@ -165,7 +173,7 @@ t [11]------
   
 ```
 
-```
+```c++
 
 //Deep Copy
 
@@ -189,12 +197,12 @@ gives you more control. Copy can still work. You could copy the pointer or objec
 
 Object that can be copied, you need to delete copy constructor.
 
-```
+```c++
 String::String(const String &) //deep copy.
 String::String(const String) //will recursively keep calling the same method.
 ```
 
-```
+```c++
 /* Copy Semantics */
 
 String(const String& that){
