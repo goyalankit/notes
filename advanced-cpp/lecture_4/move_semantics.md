@@ -23,9 +23,10 @@ S = s1 + s2
 String operator+(const String &rhs) const{
 	String result(*this); //temporary object		
 }
-
+```
 ---
 
+```C++
 S = temp; //copy each and every byte of temp. which is not efficient.
 //So you can move the pointer to temp.
 //make the reference from temp to be null
@@ -35,11 +36,11 @@ S = temp; //copy each and every byte of temp. which is not efficient.
 temp-->[1, 2,3] //copy the metadata of temp and point s to where temp is pointing. make temp point to null.
 				//destroy the s pointer. | you vould also make temp point to where S is pointing. temp get's destroyed when the method returns.
 				//Generally where `s` is pointing is destroyed				 	
-```C++
+```
 
 `Copy vs Move:` you need to specify that the argument being passed is temporary object. You do it by passing `&&`
 
-```
+```C++
 String s(String()); //scope of String() is this expression. It may call move, may optimize this call.
 String s(std::move(String())) //compilers definitly call 
 S = std::move(a+b) //here it creates a temp
@@ -100,4 +101,10 @@ T *temp_data = ::operator new (cap * 2);
 for i to cap.size * 2
 	new (temp_data + i) T(std::move(data[i])); //
 
+```
+
+```
+T a  = std::move(a); //calls move constructor
+T b;
+b = std::move(a); //move assignment
 ```
