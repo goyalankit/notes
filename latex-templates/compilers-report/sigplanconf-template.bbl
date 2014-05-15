@@ -1,0 +1,98 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agakov et~al.(2006)Agakov, Bonilla, Cavazos, Franke, Fursin, O'Boyle,
+  Thomson, Toussaint, and Williams]{c5}
+F.~Agakov, E.~Bonilla, J.~Cavazos, B.~Franke, G.~Fursin, M.~F.~P. O'Boyle,
+  J.~Thomson, M.~Toussaint, and C.~K.~I. Williams.
+\newblock Using machine learning to focus iterative optimization.
+\newblock In \emph{Proceedings of the International Symposium on Code
+  Generation and Optimization}, CGO '06, pages 295--305, Washington, DC, USA,
+  2006. IEEE Computer Society.
+\newblock ISBN 0-7695-2499-0.
+\newblock \doi{10.1109/CGO.2006.37}.
+\newblock URL \url{http://dx.doi.org/10.1109/CGO.2006.37}.
+
+\bibitem[Cavazos and Moss(2004)]{c4}
+John Cavazos and J.~Eliot~B. Moss.
+\newblock Inducing heuristics to decide whether to schedule.
+\newblock In \emph{Proceedings of the ACM SIGPLAN 2004 Conference on
+  Programming Language Design and Implementation}, PLDI '04, pages 183--194,
+  New York, NY, USA, 2004. ACM.
+\newblock ISBN 1-58113-807-5.
+\newblock \doi{10.1145/996841.996864}.
+\newblock URL \url{http://doi.acm.org/10.1145/996841.996864}.
+
+\bibitem[Cavazos and O'Boyle(2006)]{c6}
+John Cavazos and Michael F.~P. O'Boyle.
+\newblock Method-specific dynamic compilation using logistic regression.
+\newblock \emph{SIGPLAN Not.}, 41\penalty0 (10):\penalty0 229--240, October
+  2006.
+\newblock ISSN 0362-1340.
+\newblock \doi{10.1145/1167515.1167492}.
+\newblock URL \url{http://doi.acm.org/10.1145/1167515.1167492}.
+
+\bibitem[Cavazos et~al.(2007)Cavazos, Fursin, Agakov, Bonilla, O'Boyle, and
+  Temam]{c7}
+John Cavazos, Grigori Fursin, Felix Agakov, Edwin Bonilla, Michael F.~P.
+  O'Boyle, and Olivier Temam.
+\newblock Rapidly selecting good compiler optimizations using performance
+  counters.
+\newblock In \emph{Proceedings of the International Symposium on Code
+  Generation and Optimization}, CGO '07, pages 185--197, Washington, DC, USA,
+  2007. IEEE Computer Society.
+\newblock ISBN 0-7695-2764-7.
+\newblock \doi{10.1109/CGO.2007.32}.
+\newblock URL \url{http://dx.doi.org/10.1109/CGO.2007.32}.
+
+\bibitem[Cooper et~al.(1999)Cooper, Schielke, and Subramanian]{c2}
+Keith~D. Cooper, Philip~J. Schielke, and Devika Subramanian.
+\newblock Optimizing for reduced code space using genetic algorithms.
+\newblock \emph{SIGPLAN Not.}, 34\penalty0 (7):\penalty0 1--9, May 1999.
+\newblock ISSN 0362-1340.
+\newblock \doi{10.1145/315253.314414}.
+\newblock URL \url{http://doi.acm.org/10.1145/315253.314414}.
+
+\bibitem[Cooper et~al.(2002)Cooper, Subramanian, and Torczon]{c8}
+Keith~D. Cooper, Devika Subramanian, and Linda Torczon.
+\newblock Adaptive optimizing compilers for the 21st century.
+\newblock \emph{J. Supercomput.}, 23\penalty0 (1):\penalty0 7--22, August 2002.
+\newblock ISSN 0920-8542.
+\newblock \doi{10.1023/A:1015729001611}.
+\newblock URL \url{http://dx.doi.org/10.1023/A:1015729001611}.
+
+\bibitem[Cooper et~al.(2005)Cooper, Grosul, Harvey, Reeves, Subramanian,
+  Torczon, and Waterman]{c9}
+Keith~D. Cooper, Alexander Grosul, Timothy~J. Harvey, Steven Reeves, Devika
+  Subramanian, Linda Torczon, and Todd Waterman.
+\newblock Acme: Adaptive compilation made efficient.
+\newblock \emph{SIGPLAN Not.}, 40\penalty0 (7):\penalty0 69--77, June 2005.
+\newblock ISSN 0362-1340.
+\newblock \doi{10.1145/1070891.1065921}.
+\newblock URL \url{http://doi.acm.org/10.1145/1070891.1065921}.
+
+\bibitem[Monsifrot et~al.(2002)Monsifrot, Bodin, and Quiniou]{c3}
+Antoine Monsifrot, Fran\c{c}ois Bodin, and Rene Quiniou.
+\newblock A machine learning approach to automatic production of compiler
+  heuristics.
+\newblock In \emph{Proceedings of the 10th International Conference on
+  Artificial Intelligence: Methodology, Systems, and Applications}, AIMSA '02,
+  pages 41--50, London, UK, UK, 2002. Springer-Verlag.
+\newblock ISBN 3-540-44127-1.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=646053.677574}.
+
+\bibitem[Stephenson and Amarasinghe(2005)]{c1}
+Mark Stephenson and Saman Amarasinghe.
+\newblock Predicting unroll factors using supervised classification.
+\newblock In \emph{Proceedings of the International Symposium on Code
+  Generation and Optimization}, CGO '05, pages 123--134, Washington, DC, USA,
+  2005. IEEE Computer Society.
+\newblock ISBN 0-7695-2298-X.
+\newblock \doi{10.1109/CGO.2005.29}.
+\newblock URL \url{http://dx.doi.org/10.1109/CGO.2005.29}.
+
+\end{thebibliography}
