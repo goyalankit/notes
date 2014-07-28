@@ -10,9 +10,11 @@ How it works..
 - Type 1 **hypervisor** installed on bare-metal.
 - **Management console** - to administor/control hypervisor
 
+---
+
 * VMware ESXI - storage
 * hypervisor - XEN Always free
-* Management - usually paid.
+* Management - usually paid. VSphere.
 
 **XEN** ---> type 1 hypervisor part of ESXI, Citrix => ALWAYS FREE.
 
