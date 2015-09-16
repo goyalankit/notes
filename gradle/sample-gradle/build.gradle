@@ -1,0 +1,5 @@
+apply plugin: "java"
+
+sourceSets {
+  main.java.srcDir "com/ankit/src"
+}
