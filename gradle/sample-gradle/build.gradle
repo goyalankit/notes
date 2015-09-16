@@ -3,3 +3,7 @@ apply plugin: "java"
 sourceSets {
   main.java.srcDir "com/ankit/src"
 }
+
+jar {
+  manifest.attributes "Main-Class": "com.ankit.src.Main"
+}
