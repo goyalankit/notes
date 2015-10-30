@@ -48,5 +48,6 @@ operator new allocates and then run constructor.
 function syntax: runs a malloc and return void * pointer. You need to type cast and know the size of array you want.
 
 ```
-
+# Further reading
+http://www.scs.stanford.edu/~dm/home/papers/c++-new.html
 ```
