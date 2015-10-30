@@ -56,3 +56,16 @@ class CheckAuthority {
 
 let ca = CheckAuthority()
 ca.main()
+
+
+
+let a = ["1", "2"]
+let b = ["a", "b", "c"]
+let c = zip(a,b)
+var d = ""
+for k in c {
+    d = "\(d)\(k)"
+}
+
+print ("\(d)")
+
