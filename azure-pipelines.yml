@@ -6,6 +6,14 @@
 trigger:
 - master
 
+
+variables:
+  MajorVersion: 1
+  MinorVersion: 0
+  InitialReleaseTagNumber: 1
+  IncrementReleaseTagNumber: $[counter(variables['InitialReleaseTagNumber'], 0)]
+
+
 pool:
   vmImage: 'ubuntu-latest'
 
