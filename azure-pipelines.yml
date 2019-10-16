@@ -21,7 +21,12 @@ steps:
 - script: echo 'Hello, world!' > hello.txt
   displayName: 'Create a file'
 
-- bash: cp hello.txt $(Build.ArtifactStagingDirectory)    
+- script: echo 'Hello, world!' > hello2.txt
+  displayName: 'Create a file'
+
+- bash: mkdir $(Build.ArtifactStagingDirectory)/artifacts
+
+- bash: cp hello.txt hello2.txt $(Build.ArtifactStagingDirectory)/artifacts
   displayName: 'Move the file to artifact directory'
 
 - task: PublishBuildArtifacts@1
