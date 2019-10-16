@@ -31,7 +31,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)    
+    PathtoPublish: $(Build.ArtifactStagingDirectory)/artifacts
     artifactName: notes_$(Build.BuildId)
 
 - task: GitHubRelease@0
