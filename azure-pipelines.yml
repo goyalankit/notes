@@ -28,9 +28,21 @@ steps:
 - bash: cp hello.txt hello2.txt $(Build.ArtifactStagingDirectory)/artifacts
   displayName: 'Move the file to artifact directory'
 
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/artifacts' 
+    includeRootFolder: false 
+    archiveType: 'tar'
+    tarCompression: 'gz'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/notes_$(MKL)_$(Build.BuildId).zip' 
+    #replaceExistingArchive: true 
+    verbose: true
+    #quiet: # Optional
+
+
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: $(Build.ArtifactStagingDirectory)/artifacts
+    PathtoPublish: $(Build.ArtifactStagingDirectory)
     artifactName: notes_$(Build.BuildId)
 
 - task: GitHubRelease@0
