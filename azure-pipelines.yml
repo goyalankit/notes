@@ -34,7 +34,7 @@ steps:
     includeRootFolder: false 
     archiveType: 'tar'
     tarCompression: 'gz'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/notes_$(MKL)_$(Build.BuildId).zip' 
+    archiveFile: '$(Build.ArtifactStagingDirectory)/notes_$(MKL)_$(Build.BuildId).tar.gz' 
     #replaceExistingArchive: true 
     verbose: true
     #quiet: # Optional
