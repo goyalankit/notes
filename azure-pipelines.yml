@@ -29,9 +29,13 @@ stages:
         downloadType: 'specific'
         itemPattern: '**/tensorflow_java*.tar.gz'
         downloadPath: '$(System.ArtifactsDirectory)'
+
+    - script: mkdir -p $(agent.builddirectory)/p
+      displayName: Create a preparation directory      
+
     - task: ExtractFiles@1
       inputs:
         archiveFilePatterns: '$(System.ArtifactsDirectory)/*.tar.gz'
-        destinationFolder: '$(agent.builddirectory)'
+        destinationFolder: '$(agent.builddirectory)/p'
         cleanDestinationFolder: false
       
