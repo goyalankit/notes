@@ -41,3 +41,16 @@ stages:
 
     - bash: sudo bash /opt/linkedin/build_tf.sh --artifact_dir='$(agent.builddirectory)'/p --tensorflow_version='2.0.0' --lang='java'
       displayName: Create jar
+
+
+    - task: GitHubRelease@0
+      inputs:
+        gitHubConnection: 'goyalankit'
+        repositoryName: '$(Build.Repository.Name)'
+        action: create
+        target: $(Build.SourceVersion)
+        tagSource: 'manual'
+        tag: v$(MajorVersion).$(MinorVersion).$(IncrementReleaseTagNumber)-java
+        changeLogCompareToRelease: lastFullRelease
+        changeLogType: commitBased
+        assets: $(agent.builddirectory)/p/artifacts/tensorflow-java/libs/libtensorflow.jar
