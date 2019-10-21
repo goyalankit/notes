@@ -30,7 +30,7 @@ stages:
 
     - task: ExtractFiles@1
       inputs:
-        archiveFilePatterns: '$(System.ArtifactsDirectory)/tensorflow_java_192.tar.gz'
+        archiveFilePatterns: '$(System.ArtifactsDirectory)/tensorflow_java_192.tar.gz/tensorflow_java_192.tar.gz'
         destinationFolder: '$(agent.builddirectory)'
         cleanDestinationFolder: false
       
