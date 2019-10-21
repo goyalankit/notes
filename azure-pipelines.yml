@@ -21,12 +21,10 @@ stages:
     - script: echo "hello to my first Build"
     - task: DownloadBuildArtifacts@0
       inputs:
-        buildType: 'specific'
-        project: 'f264fb05-fdb0-48f5-8413-4707614a8f78'
-        pipeline: '1'
-        buildVersionToDownload: 'latest'
-        downloadType: 'specific'
+        buildType: 'current'
+        downloadType: 'single'            
         downloadPath: '$(System.ArtifactsDirectory)'
+        artifactName: tensorflow_java_$(Build.BuildId).tar.gz
 
     - task: ExtractFiles@1
       inputs:
