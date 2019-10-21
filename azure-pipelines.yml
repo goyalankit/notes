@@ -39,5 +39,5 @@ stages:
         destinationFolder: '$(agent.builddirectory)/p'
         cleanDestinationFolder: false
 
-    - bash: sudo bash /opt/linkedin/build_tf.sh --artifact_dir='$(System.builddirectory)'/p --tensorflow_version='2.0.0' --lang='java'
+    - bash: sudo bash /opt/linkedin/build_tf.sh --artifact_dir='$(agent.builddirectory)'/p --tensorflow_version='2.0.0' --lang='java'
       displayName: Create jar
