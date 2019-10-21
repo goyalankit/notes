@@ -25,9 +25,8 @@ stages:
         project: 'f264fb05-fdb0-48f5-8413-4707614a8f78'
         pipeline: '1'
         buildVersionToDownload: 'latest'
-        downloadType: 'single'
+        downloadType: 'specific'
         downloadPath: '$(System.ArtifactsDirectory)'
-        artifactName: 'tensorflow_java_192.tar.gz'
 
     - task: ExtractFiles@1
       inputs:
