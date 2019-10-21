@@ -27,7 +27,7 @@ stages:
         buildVersionToDownload: 'specific'
         buildId: '192'
         downloadType: 'specific'
-        itemPattern: 'tensorflow_java*'
+        itemPattern: '**/tensorflow_java*.tar.gz'
         downloadPath: '$(System.ArtifactsDirectory)'
     - task: ExtractFiles@1
       inputs:
