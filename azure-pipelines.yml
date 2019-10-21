@@ -30,7 +30,7 @@ stages:
         itemPattern: '**/tensorflow_java*.tar.gz'
         downloadPath: '$(System.ArtifactsDirectory)'
 
-    - script: mkdir -p $(agent.builddirectory)/p
+    - bash: mkdir -p $(agent.builddirectory)/p/artifacts/tensorflow-java/libs
       displayName: Create a preparation directory      
 
     - task: ExtractFiles@1
