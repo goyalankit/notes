@@ -30,7 +30,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo "Key1: $KEY1"
-        cat > filename <<- "EOF"
+        cat > filename <<EOF
+        hello from other $KEY1
         file contents ${KEY1}
         file contents $KEY1
         more contents ${KEY2}
