@@ -36,3 +36,5 @@ jobs:
       env:
         KEY1: "value1"
         KEY2: "value2"
+    - name: Display contents of the file created in the above step
+      run: cat filename
