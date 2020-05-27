@@ -33,8 +33,7 @@ jobs:
         printf "${GPG_SIGNING_KEY}" | base64 --decode > ${HOME}/.gnupg/private.key
         chmod 500 ${HOME}/.gnupg/private.key
         # Try importing the key.
-        gpg --batch --import ${HOME}/.gnupg/private.key
-        EOF
+        gpg --import ${HOME}/.gnupg/private.key
       env:
         GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
 
