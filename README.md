@@ -1,3 +1,3 @@
 # Basic Notes
 
- ![visitors](https://visitor-badge.glitch.me/badge?page_id=page.id)
+![Visitor Count](https://profile-counter.glitch.me/goyalankit/count.svg)
